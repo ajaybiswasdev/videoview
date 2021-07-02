@@ -1,0 +1,15 @@
+<div class="videoPanel pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="videoBox">
+                    <video class="w-100" controls id="yourVideo" (loadedmetadata)="getDuration($event)">
+                        <source src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                        <!-- <source src="../../assets/videos/mov_bbb.ogg" type="video/ogg"> -->
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
