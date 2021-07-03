@@ -4,10 +4,18 @@
             <div class="col-md-6">
                 <div class="videoBox">
                     <video class="w-100" controls id="yourVideo" (loadedmetadata)="getDuration($event)">
-                        <source src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                        <source src="https://testincomingvml.s3.amazonaws.com/Athlete_11_02_2021.mp4" type="video/mp4">
                         <!-- <source src="../../assets/videos/mov_bbb.ogg" type="video/ogg"> -->
                         Your browser does not support HTML video.
                     </video>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="m-2">
+                        <button type="button" class="btn btn-primary" (click)="plusClickFunc('minus')">-</button>
+                    </div>
+                    <div class="m-2">
+                        <button type="button" class="btn btn-primary" (click)="plusClickFunc('plus')">+</button>
+                    </div>
                 </div>
             </div>
         </div>
